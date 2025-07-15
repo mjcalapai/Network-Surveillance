@@ -1,0 +1,17 @@
+# https://www.wireshark.org/download.html
+#download npcap
+    # npcap can save the livecapture to files to download instead which could be used for training data later
+import pyshark
+
+#instance of packet capture
+capture = pyshark.LiveCapture() #fix i don't know what ip to look for yet
+
+capture.set_debug()
+
+#start capturing packets
+capture.sniff(timeout=50) 
+
+for packet in capture:
+    print(packet)
+
+capture.close()
