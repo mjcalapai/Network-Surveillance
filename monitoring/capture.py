@@ -4,12 +4,12 @@
 import pyshark
 
 #instance of packet capture
-capture = pyshark.LiveCapture() #fix i don't know what ip to look for yet
+capture = pyshark.LiveCapture(interface='Wi-Fi') #fix i don't know what ip to look for yet
 
 capture.set_debug()
 
 #start capturing packets
-capture.sniff(timeout=50) 
+capture.sniff(timeout=10) 
 
 for packet in capture:
     print(packet)
