@@ -4,7 +4,7 @@
 import pyshark
 
 #instance of packet capture
-capture = pyshark.LiveCapture(interface='Wi-Fi') #fix i don't know what ip to look for yet
+capture = pyshark.LiveCapture(interface='Wi-Fi', output_file='capture.pcap') #fix i don't know what ip to look for yet
 
 capture.set_debug()
 
