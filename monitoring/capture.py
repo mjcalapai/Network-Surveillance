@@ -15,3 +15,10 @@ for packet in capture:
     print(packet)
 
 capture.close()
+
+
+#try not to print every packet:
+#ideas:
+    # coun the packets\
+    #print a summary
+    #

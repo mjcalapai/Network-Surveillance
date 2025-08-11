@@ -1,1 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.python-version
+.pytest_cache/
+
+# Virtual envs
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# App data (captures, outputs, logs)
+data/raw/
+data/processed/
+*.log
+*.jsonl
+
+# Secrets
+.env
+config.yaml
+
+# Allow sample/demo files
+!tests/
+!tests/sample.pcap
+!config.example.yaml
 *.pcap
